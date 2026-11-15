@@ -9,6 +9,7 @@ import TravelJournal from '@/components/sections/home/TravelJournal';
 import TestimonialsSection from '@/components/sections/home/TestimonialsSection';
 import InnerCircleCTA from '@/components/sections/home/InnerCircleCTA';
 import RevealOnScroll from '@/components/ui/RevealOnScroll';
+import SearchSection from '@/components/sections/home/SearchSection';
 
 // ─── COMPREHENSIVE SEO METADATA ────────────────────────────────────────────────
 export const metadata = {
@@ -23,7 +24,7 @@ export const metadata = {
     "weekend getaways near Mumbai",
     "luxury villa rentals Maharashtra",
     "private villas Karjat",
-    "Lonavla luxury stays"
+    "Lonavla luxury stays",
   ],
   openGraph: {
     title: "Wandernest Villas | Luxury Private Pool Villas in Mumbai, Lonavla & Alibaug",
@@ -43,17 +44,20 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col w-full bg-brand-light text-[#171717] overflow-hidden">
-
-      {/* 1. Hero Section (with Embedded Glassmorphic Search - loads smoothly at top) */}
+    <div className="flex flex-col w-full bg-brand-light text-foreground overflow-hidden">
+      
+      {/* 1. Hero Section (with Embedded Glassmorphic Search) */}
       <Hero />
-
+ {/* Floating Search Bar stays static on top */}
+      <div className="relative z-40">
+        <SearchSection />
+      </div>
       {/* 2. The Wandernest Story (Brand Philosophy & SEO Keyword Block) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <BrandStory />
       </RevealOnScroll>
 
-      {/* 3. Popular Destinations to Rent a Holiday Home in India (Cards + SEO Tag Cloud) */}
+      {/* 3. Popular Destinations to Rent a Holiday Home in India */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <FeaturedDestinations />
       </RevealOnScroll>
@@ -63,27 +67,30 @@ export default function HomePage() {
         <BrowseByVibe />
       </RevealOnScroll>
 
-      {/* 4. Wandernest Signature Collection (Property Spotlight) */}
+      {/* 5. Wandernest Signature Collection (Property Spotlight) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <SignatureCollection />
       </RevealOnScroll>
 
-      {/* 5. Signature Concierge Services (Interactive Layout) */}
+
+
+
+      {/* 6. Signature Concierge Services (Interactive Tabs Layout) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <ConciergeServices />
       </RevealOnScroll>
 
-      {/* 6. The Travel Journal (Editorial / SEO Articles - The Luxe Digest) */}
+      {/* 7. The Luxe Journal (Editorial / SEO Articles) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <TravelJournal />
       </RevealOnScroll>
 
-      {/* 7. Testimonials & Trust (Press & Verified Patron Reviews) */}
+      {/* 8. Testimonials & Patron Trust */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <TestimonialsSection />
       </RevealOnScroll>
 
-      {/* 8. Inner Circle (Lead Generation / Exclusive Membership CTA) */}
+      {/* 9. Inner Circle (Lead Generation / Exclusive Membership CTA) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <InnerCircleCTA />
       </RevealOnScroll>

@@ -24,7 +24,7 @@ export default function BrandStory() {
 
               {/* Floating Badge on Image */}
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 dark:bg-brand-card/90 backdrop-blur-md border border-white/20 shadow-lg">
-                <p className="font-serif text-sm font-semibold text-foreground">
+                <p className="font-sans text-sm font-semibold text-foreground">
                   The Wandernest Standard
                 </p>
                 <p className="font-sans text-xs text-muted mt-0.5">
@@ -50,35 +50,32 @@ export default function BrandStory() {
             </div>
 
             {/* Heading */}
-            <h2 className="heading-lg text-[#171717] mb-6 leading-tight">
-              Curating Maharashtra&apos;s Most Coveted Private Havens
+            <h2 className="heading-lg text-foreground mb-6 leading-tight">
+              Where Unrivaled Seclusion Meets Bespoke Hospitality
             </h2>
 
             {/* Organic SEO Rich Prose */}
             <div className="space-y-5 text-gray-800 text-base md:text-lg leading-relaxed font-light">
               <p>
-                At Wandernest, we believe true luxury is rooted in uninterrupted silence, architectural grace, and seamless intimacy. Created for discerning families and private groups, our hand-selected portfolio redefines <strong className="font-semibold text-[#171717]">weekend getaways near Mumbai</strong> into transformative escapes.
+                At Wandernest Villas, we believe true luxury lies in undisturbed stillness. Our collection of <strong className="font-semibold text-foreground">private pool villas near Mumbai</strong> and <strong className="font-semibold text-foreground">Alibaug beachfront estates</strong> is curated for those who demand the complete privacy of a personal home paired with the uncompromising standards of a 5-star boutique resort.
               </p>
               <p>
-                Whether you seek the tranquil heights of our <strong className="font-semibold text-[#171717]">luxury private pool villas in Lonavla</strong> embraced by cascading monsoon clouds, or the sun-bleached serenity of our private <strong className="font-semibold text-[#171717]">Alibaug beachfront estates</strong> just minutes from the Arabian sea, every address is entirely your own.
-              </p>
-              <p>
-                Every estate is fully serviced by dedicated, discreet <strong className="font-semibold text-[#171717]">in-house chefs</strong> crafting farm-to-table coastal feasts and multi-course royal dinners, paired with personalized butler service to ensure you never have to lift a finger.
+                Every estate is fully serviced by <strong className="font-semibold text-foreground">dedicated in-house chefs</strong> crafting farm-to-table coastal feasts and bespoke multi-course menus. Whether you seek an escape under monsoonal skies or sun-drenched mornings, experience premier <strong className="font-semibold text-foreground">5-star hospitality in Lonavla</strong>, Karjat, and beyond.
               </p>
             </div>
 
             {/* Stats / Value Highlights */}
             <div className="grid grid-cols-3 gap-6 pt-8 mt-8 border-t border-gray-300">
               <div>
-                <p className="font-serif text-2xl md:text-3xl font-bold text-[#171717]">50+</p>
+                <p className="font-serif text-2xl md:text-3xl font-bold text-foreground">50+</p>
                 <p className="font-sans text-xs text-gray-600 uppercase tracking-wider mt-1 font-medium">Private Estates</p>
               </div>
               <div>
-                <p className="font-serif text-2xl md:text-3xl font-bold text-[#171717]">100%</p>
+                <p className="font-serif text-2xl md:text-3xl font-bold text-foreground">100%</p>
                 <p className="font-sans text-xs text-gray-600 uppercase tracking-wider mt-1 font-medium">Private Pools</p>
               </div>
               <div>
-                <p className="font-serif text-2xl md:text-3xl font-bold text-[#171717]">5★</p>
+                <p className="font-serif text-2xl md:text-3xl font-bold text-foreground">5★</p>
                 <p className="font-sans text-xs text-gray-600 uppercase tracking-wider mt-1 font-medium">Dedicated Chefs</p>
               </div>
             </div>

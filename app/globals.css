@@ -18,6 +18,10 @@
   --color-brand-dark: #12151e;
   --color-brand-card: #1e2235;
   --color-brand-light: #f8f7f2;
+  --color-brand-cream: #fbf7f0;
+  --color-brand-cream-warm: #f8eedf;
+  --color-border-luxury: #ede1ce;
+  --color-whatsapp: #25D366;
 }
 
 /* 2. Tailwind v4 Theme Configuration */
@@ -32,6 +36,10 @@
   --color-brand-dark: var(--color-brand-dark);
   --color-brand-card: var(--color-brand-card);
   --color-brand-light: var(--color-brand-light);
+  --color-brand-cream: var(--color-brand-cream);
+  --color-brand-cream-warm: var(--color-brand-cream-warm);
+  --color-border-luxury: var(--color-border-luxury);
+  --color-whatsapp: var(--color-whatsapp);
 
   /* Custom Tailwind Fonts */
   --font-sans: "Inter", sans-serif;
@@ -102,7 +110,11 @@
 
   /* Glassmorphism */
   .glass-dark {
-    @apply bg-[#12151e]/60 backdrop-blur-md border border-white/10 shadow-2xl;
+    @apply bg-brand-dark/80 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+
+  .glass-gold {
+    @apply bg-brand-dark/90 backdrop-blur-md border border-gold-main/40 shadow-2xl;
   }
 
   .glass-light {
@@ -162,5 +174,20 @@
 
   .delay-800 {
     animation-delay: 800ms;
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }

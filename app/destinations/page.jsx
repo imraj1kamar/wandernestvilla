@@ -57,7 +57,7 @@ export default function DestinationsHub() {
                 <Link 
                   key={i} 
                   href={loc.link}
-                  className="group flex items-center justify-between p-5 bg-white border border-[#ede1ce] rounded-xl hover:shadow-md hover:border-gold-main transition-all duration-200"
+                  className="group flex items-center justify-between p-5 bg-white border border-border-luxury rounded-xl hover:shadow-md hover:border-gold-main transition-all duration-200"
                 >
                   <span className="font-sans font-semibold text-lg text-foreground group-hover:text-gold-dark transition-colors">
                     Villas in {loc.name}
@@ -72,7 +72,7 @@ export default function DestinationsHub() {
 
           {/* Categories Sidebar (Right Side - 4 cols) */}
           <div className="lg:col-span-4">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-[#ede1ce] sticky top-32">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-border-luxury sticky top-32">
               <h2 className="font-serif text-xl text-foreground mb-6 pb-3 border-b border-gray-100">
                 Curated Collections
               </h2>
@@ -91,7 +91,7 @@ export default function DestinationsHub() {
               </ul>
 
               <div className="mt-10 pt-8 border-t border-gray-100">
-                <h3 className="font-sans font-bold text-xs text-foreground mb-2 uppercase tracking-wider">
+                <h3 className="font-serif font-bold text-xs text-foreground mb-2 uppercase tracking-wider">
                   Need Assistance?
                 </h3>
                 <p className="text-sm text-muted mb-4 font-light leading-relaxed">

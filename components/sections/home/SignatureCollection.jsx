@@ -58,8 +58,8 @@ export default function SignatureCollection() {
                 Property Spotlight
               </span>
             </div>
-            <h2 className="heading-lg text-[#171717] tracking-tight">
-              Signature Collection
+            <h2 className="heading-lg text-foreground tracking-tight">
+              Wandernest Signature Collection
             </h2>
             <p className="text-gray-700 text-sm md:text-base mt-1 font-light">
               Most booked luxury villas in Maharashtra
@@ -114,7 +114,7 @@ export default function SignatureCollection() {
                   <p className="text-xs font-sans text-gray-500 uppercase tracking-wider mb-1 font-medium">
                     {villa.location}
                   </p>
-                  <h3 className="font-serif text-xl font-bold text-[#171717] group-hover:text-gold-dark transition-colors">
+                  <h3 className="font-serif text-xl font-bold text-foreground group-hover:text-gold-dark transition-colors">
                     {villa.title}
                   </h3>
                   <p className="text-xs text-gray-700 font-sans mt-2.5 flex items-center gap-1.5 font-medium">
@@ -126,7 +126,7 @@ export default function SignatureCollection() {
                 {/* Bottom Row: Price & CTA */}
                 <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                   <div>
-                    <span className="text-lg md:text-xl font-bold text-[#171717]">
+                    <span className="text-lg md:text-xl font-bold text-foreground">
                       {villa.price}
                     </span>
                     <span className="text-xs text-gray-500 font-normal ml-0.5">
@@ -136,10 +136,10 @@ export default function SignatureCollection() {
 
                   <Link
                     href={villa.href}
-                    className="btn-outline text-xs px-4 py-2 rounded-lg font-semibold inline-flex items-center gap-1 hover:brightness-110"
+                    className="text-sm font-semibold text-gold-dark hover:text-gold-main transition-colors font-sans underline underline-offset-4 flex items-center gap-1 group/btn"
                   >
                     <span>Explore Villa</span>
-                    <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
+                    <span className="transition-transform group-hover/btn:translate-x-1">&rarr;</span>
                   </Link>
                 </div>
               </div>

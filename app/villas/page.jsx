@@ -30,7 +30,7 @@ const trustPillars = [
 
 export default function OurVillasPage() {
   return (
-    <div className="bg-brand-light min-h-screen text-[#171717] pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
+    <div className="bg-brand-light min-h-screen text-foreground pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         
         {/* ─── PAGE HERO HEADER ────────────────────────────────────────────── */}
@@ -43,24 +43,25 @@ export default function OurVillasPage() {
             <span className="w-8 h-[1px] bg-gold-main" />
           </div>
 
-          <h1 className="heading-xl text-[#171717] tracking-tight mb-4">
+          <h1 className="heading-xl text-foreground tracking-tight mb-4">
             Our Signature <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#171717] via-[#171717] to-gold-dark">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground to-gold-dark">
               Private Villas
             </span> &amp; Estates
           </h1>
 
-          <p className="font-sans text-base sm:text-lg text-gray-700 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-base sm:text-lg text-muted font-light leading-relaxed max-w-2xl mx-auto">
             Handcrafted architectural mansions, temperature-controlled pools, and 5-star personalized hospitality across Maharashtra and India&apos;s most coveted landscapes.
           </p>
 
           {/* 4 Trust Highlights Strip */}
+          <h2 className="sr-only">Our Core Highlights and Villa Portfolio</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-black/5 text-left">
             {trustPillars.map((p) => (
-              <div key={p.title} className="p-3.5 rounded-2xl bg-white border border-[#ede1ce] shadow-2xs">
+              <div key={p.title} className="p-3.5 rounded-2xl bg-white border border-border-luxury shadow-2xs">
                 <div className="text-xl mb-1">{p.icon}</div>
-                <h4 className="font-serif text-sm font-bold text-[#171717]">{p.title}</h4>
-                <p className="font-sans text-xs text-gray-500 font-light mt-0.5">{p.desc}</p>
+                <h3 className="font-serif text-sm font-bold text-foreground">{p.title}</h3>
+                <p className="font-sans text-xs text-muted font-light mt-0.5">{p.desc}</p>
               </div>
             ))}
           </div>

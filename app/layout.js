@@ -5,6 +5,8 @@ import "./globals.css";
 import Header from "@/components/layout/public/Header";
 import Footer from "@/components/layout/public/Footer";
 import { Providers } from "@/redux/Providers";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import FloatingActions from "@/components/ui/FloatingActions";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,15 +58,18 @@ export default function RootLayout({ children }) {
             });
           `}
         </Script>
+        {/* JSON-LD LOCAL BUSINESS SCHEMA FOR GOOGLEBOT & AI AGENTS */}
+        <LocalBusinessSchema />
       </head>
       
-      <body className="min-h-full flex flex-col bg-brand-light text-[#171717]" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col bg-brand-light text-foreground" suppressHydrationWarning>
         <Providers>
           <Header />
           <main className="flex-grow">
             {children}
           </main>
           <Footer />
+          <FloatingActions />
         </Providers>
       </body>
     </html>

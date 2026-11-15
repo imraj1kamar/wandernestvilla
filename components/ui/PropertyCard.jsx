@@ -32,7 +32,7 @@ export default function PropertyCard({ image, title, rating, specs, price, explo
                     </div>
                     <Link
                         href={exploreLink}
-                        className="text-[#B8860B] font-semibold text-sm hover:underline decoration-2 underline-offset-4"
+                        className="text-gold-dark font-semibold text-sm hover:underline decoration-2 underline-offset-4"
                     >
                         Explore Villa
                     </Link>

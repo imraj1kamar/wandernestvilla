@@ -199,9 +199,9 @@ export default function VillasDirectory() {
   return (
     <div>
       {/* ─── INTERACTIVE FILTER & SEARCH BAR ──────────────────────────────── */}
-      <div className="bg-white p-5 sm:p-6 rounded-3xl border border-[#ede1ce] shadow-sm mb-12">
+      <div className="bg-white p-5 sm:p-6 rounded-3xl border border-border-luxury shadow-sm mb-12">
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-5">
-          
+
           {/* Destination Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 scrollbar-none">
             {destinationsList.map((dest) => {
@@ -211,11 +211,10 @@ export default function VillasDirectory() {
                   key={dest}
                   type="button"
                   onClick={() => setSelectedDestination(dest)}
-                  className={`px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 cursor-pointer ${
-                    isActive
-                      ? 'bg-[#171717] text-white shadow-md'
-                      : 'bg-gray-50 border border-gray-200 text-gray-700 hover:border-gold-main hover:bg-[#fbf7f0] hover:text-gold-dark'
-                  }`}
+                  className={`px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-300 cursor-pointer ${isActive
+                      ? 'bg-foreground text-white shadow-md'
+                      : 'bg-gray-50 border border-gray-200 text-gray-700 hover:border-gold-main hover:bg-brand-cream hover:text-gold-dark'
+                    }`}
                 >
                   {dest}
                 </button>
@@ -232,7 +231,7 @@ export default function VillasDirectory() {
                 placeholder="Search villa or feature..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm text-[#171717] placeholder-gray-400 focus:outline-none focus:border-gold-main focus:bg-white transition-colors"
+                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-sm text-foreground placeholder-gray-400 focus:outline-none focus:border-gold-main focus:bg-white transition-colors"
               />
               <svg
                 className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"
@@ -250,7 +249,7 @@ export default function VillasDirectory() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-[#171717] font-medium focus:outline-none focus:border-gold-main cursor-pointer"
+              className="px-4 py-2.5 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-foreground font-medium focus:outline-none focus:border-gold-main cursor-pointer"
             >
               <option value="recommended">Featured Estates</option>
               <option value="price-low">Price: Low to High</option>
@@ -264,7 +263,7 @@ export default function VillasDirectory() {
         {/* Results Counter / Filter status */}
         <div className="flex items-center justify-between pt-4 mt-4 border-t border-gray-100 text-xs text-gray-500">
           <span>
-            Showing <strong className="text-[#171717] font-semibold">{filteredVillas.length}</strong> of{' '}
+            Showing <strong className="text-foreground font-semibold">{filteredVillas.length}</strong> of{' '}
             {allVillas.length} Handpicked Estates
           </span>
           {(selectedDestination !== 'All Destinations' || searchQuery) && (
@@ -284,8 +283,8 @@ export default function VillasDirectory() {
 
       {/* ─── VILLA CARDS GRID (ENHANCED LUXURY CARDS) ──────────────────────── */}
       {filteredVillas.length === 0 ? (
-        <div className="text-center py-20 bg-white rounded-3xl border border-[#ede1ce] p-10">
-          <p className="font-serif text-2xl font-bold text-[#171717] mb-2">No Estates Match Your Criteria</p>
+        <div className="text-center py-20 bg-white rounded-3xl border border-border-luxury p-10">
+          <p className="font-serif text-2xl font-bold text-foreground mb-2">No Estates Match Your Criteria</p>
           <p className="font-sans text-sm text-gray-600 mb-6 font-light">
             Try adjusting your search terms or view all destinations.
           </p>
@@ -307,7 +306,7 @@ export default function VillasDirectory() {
             return (
               <div
                 key={villa.id}
-                className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative border border-[#ede1ce]"
+                className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative border border-border-luxury"
               >
                 {/* Image Container with Badges */}
                 <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-gray-100">
@@ -340,11 +339,10 @@ export default function VillasDirectory() {
                       type="button"
                       onClick={() => toggleWishlist(villa.id)}
                       aria-label="Save to Wishlist"
-                      className={`w-8 h-8 rounded-full flex items-center justify-center backdrop-blur-md transition-all shadow-md ${
-                        isLiked
+                      className={`w-8 h-8 rounded-full flex items-center justify-center backdrop-blur-md transition-all shadow-md ${isLiked
                           ? 'bg-rose-500 text-white'
                           : 'bg-black/40 text-white hover:bg-black/60'
-                      }`}
+                        }`}
                     >
                       <svg
                         className="w-4 h-4 fill-current"
@@ -373,7 +371,7 @@ export default function VillasDirectory() {
                     </div>
 
                     {/* Main Title */}
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#171717] group-hover:text-gold-dark transition-colors leading-snug">
+                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-foreground group-hover:text-gold-dark transition-colors leading-snug">
                       <Link href={`/villas/${villa.id}`}>
                         {villa.title}
                       </Link>
@@ -384,7 +382,7 @@ export default function VillasDirectory() {
                       <div className="flex text-gold-main text-sm tracking-tight font-serif">
                         ★★★★★
                       </div>
-                      <span className="text-xs font-bold text-[#171717] font-sans">{villa.rating}</span>
+                      <span className="text-xs font-bold text-foreground font-sans">{villa.rating}</span>
                       <span className="text-xs text-gray-500 font-light font-sans">({villa.reviewsCount} verified reviews)</span>
                     </div>
 
@@ -398,7 +396,7 @@ export default function VillasDirectory() {
                   {/* Bottom Row: Price & CTA */}
                   <div className="flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
                     <div>
-                      <span className="text-xl sm:text-2xl font-bold text-[#171717] font-serif">
+                      <span className="text-xl sm:text-2xl font-bold text-foreground font-serif">
                         {villa.price}
                       </span>
                       <span className="text-xs text-gray-500 font-sans ml-1">
@@ -425,12 +423,12 @@ export default function VillasDirectory() {
       )}
 
       {/* ─── CONCIERGE ASSISTANCE CALLOUT BANNER ──────────────────────────── */}
-      <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#f8eedf] border border-[#ede1ce] shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-brand-cream-warm border border-border-luxury shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-2xl text-center md:text-left">
           <span className="text-xs uppercase tracking-widest text-gold-dark font-bold block mb-1">
             Bespoke Estate Sourcing
           </span>
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] tracking-tight mb-2">
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-2">
             Seeking an Unlisted Estate for a Private Occasion?
           </h3>
           <p className="font-sans text-sm text-gray-700 font-light leading-relaxed">
@@ -446,7 +444,7 @@ export default function VillasDirectory() {
             Speak with a Curator
           </Link>
           <a
-            href="tel:+919820092837"
+            href="tel:+9198++++++++"
             className="text-xs sm:text-sm font-semibold text-gold-dark hover:text-gold-main transition-colors flex items-center gap-1.5"
           >
             <span>Hotline: +91 98200 92837</span>

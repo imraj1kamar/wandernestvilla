@@ -60,7 +60,7 @@ const milestones = [
 
 export default function AboutPage() {
   return (
-    <div className="w-full bg-brand-light text-[#171717] pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
+    <div className="w-full bg-brand-light text-foreground pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         {/* ─── 1. 50/50 HERO SPLIT LAYOUT ───────────────────────────────────── */}
@@ -82,8 +82,8 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10" />
 
               {/* Floating Quality Badge */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#ede1ce] shadow-lg">
-                <p className="font-serif text-sm font-semibold text-[#171717]">
+              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-border-luxury shadow-lg">
+                <p className="font-sans text-sm font-semibold text-foreground">
                   The Wandernest Benchmark
                 </p>
                 <p className="font-sans text-xs text-gray-600 mt-0.5">
@@ -109,9 +109,9 @@ export default function AboutPage() {
             </div>
 
             {/* Serif Heading */}
-            <h1 className="heading-xl text-[#171717] tracking-tight mb-6">
+            <h1 className="heading-xl text-foreground tracking-tight mb-6">
               Redefining <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#171717] via-[#171717] to-gold-dark">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground to-gold-dark">
                 Private Luxury
               </span> in India
             </h1>
@@ -148,10 +148,10 @@ export default function AboutPage() {
 
         {/* ─── 2. MILESTONE NUMBERS STRIP ───────────────────────────────────── */}
         <RevealOnScroll yOffset={30} duration={1000}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-8 md:p-12 rounded-3xl bg-[#f8eedf] border border-[#ede1ce] shadow-sm mb-24 md:mb-32">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-8 md:p-12 rounded-3xl bg-brand-cream-warm border border-border-luxury shadow-sm mb-24 md:mb-32">
             {milestones.map((m) => (
               <div key={m.label} className="text-center sm:text-left">
-                <p className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#171717] tracking-tight">
+                <p className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   {m.value}
                 </p>
                 <p className="font-sans text-xs sm:text-sm text-gray-700 uppercase tracking-wider mt-2 font-medium">
@@ -168,7 +168,7 @@ export default function AboutPage() {
             <span className="text-xs uppercase tracking-widest text-gold-dark font-bold block mb-2">
               The Three Pillars
             </span>
-            <h2 className="heading-lg text-[#171717] tracking-tight">
+            <h2 className="heading-lg text-foreground tracking-tight">
               Values That Define Every Stay
             </h2>
             <p className="text-gray-700 text-sm font-light mt-2">
@@ -180,14 +180,14 @@ export default function AboutPage() {
             {brandValues.map((val) => (
               <div
                 key={val.id}
-                className="p-8 rounded-3xl bg-white border border-[#ede1ce] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group relative overflow-hidden"
+                className="p-8 rounded-3xl bg-white border border-border-luxury shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group relative overflow-hidden"
               >
                 {/* Top Icon Badge */}
-                <div className="w-14 h-14 rounded-2xl bg-[#f8eedf] border border-[#ede1ce] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-gold-main transition-transform">
+                <div className="w-14 h-14 rounded-2xl bg-brand-cream-warm border border-border-luxury flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-gold-main transition-transform">
                   {val.icon}
                 </div>
 
-                <h3 className="font-serif text-2xl font-bold text-[#171717] mb-3 group-hover:text-gold-dark transition-colors">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-3 group-hover:text-gold-dark transition-colors">
                   {val.title}
                 </h3>
 

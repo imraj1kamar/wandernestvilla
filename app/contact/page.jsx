@@ -29,10 +29,10 @@ export default function ContactPage() {
 
         {/* ─── 2-COLUMN LUXURY CONTACT LAYOUT ──────────────────────────────── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* Left Column: Local SEO Contact Information */}
           <div className="lg:col-span-5 flex flex-col justify-start">
-            
+
             {/* Tagline */}
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="w-8 h-[1px] bg-gold-main" />
@@ -55,6 +55,9 @@ export default function ContactPage() {
 
             {/* Contact Details List */}
             <div className="space-y-8 border-t border-white/10 pt-8">
+              <h2 className="font-serif text-xl sm:text-2xl font-bold text-gold-light mb-2">
+                Our Private Channels
+              </h2>
 
               {/* 1. Mumbai Headquarters (Local SEO) */}
               <div className="flex items-start gap-4">
@@ -130,6 +133,46 @@ export default function ContactPage() {
                   <p className="text-sm text-white/70 font-light">
                     24 Hours / 7 Days a Week &bull; Round-the-clock bespoke operations across Maharashtra.
                   </p>
+                </div>
+              </div>
+
+              {/* 5. Direct Social & Messaging Channels */}
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 text-gold-main">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-white mb-2">
+                    Social &amp; Instant Messaging
+                  </h3>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href="https://wa.me/9198++++++++?text=Hello%20Wandernest%20Villas%20Concierge%2C%20I%20would%20like%20to%20inquire%20about%20villa%20bookings."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 rounded-lg bg-whatsapp/15 border border-whatsapp/40 text-whatsapp hover:bg-whatsapp hover:text-white transition-all text-xs font-semibold flex items-center gap-1.5"
+                    >
+                      <span>WhatsApp Concierge</span>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/wandernestvillas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/80 hover:text-gold-main hover:border-gold-main/40 transition-all text-xs font-medium"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/wandernestvillas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/80 hover:text-gold-main hover:border-gold-main/40 transition-all text-xs font-medium"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
                 </div>
               </div>
 

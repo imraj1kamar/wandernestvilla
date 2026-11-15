@@ -5,36 +5,36 @@ import Link from 'next/link';
 const articles = [
   {
     id: 1,
-    category: 'Architecture Spotlight',
+    category: 'Travel Guide',
     readTime: '5 min read',
     date: 'Nov 12, 2026',
-    title: "A Weekend in Lonavla's Royal Mansions: Heritage Above the Clouds",
+    title: 'The Ultimate Weekend Itinerary for Khandala & Lonavla',
     excerpt:
-      'Explore how colonial basalt masonry and contemporary infinity glass create a dramatic architectural retreat amid the Sahyadri peaks.',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
-    href: '/journal/weekend-in-lonavlas-royal-mansions',
+      'How to spend 72 hours discovering secluded monsoon waterfalls, private cliffside sunsets, and intimate chef-curated dining in the Sahyadris.',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+    href: '/blog',
   },
   {
     id: 2,
-    category: 'Coastal Living',
+    category: 'Culinary Spotlight',
     readTime: '4 min read',
     date: 'Nov 04, 2026',
-    title: 'The Alibaug Private Villa Guide: Secluded Shores & Secret Jetties',
+    title: 'Top 5 Villas with Private Chefs near Mumbai',
     excerpt:
-      'From private speedboats at Gateway of India to secluded beachfront coconut groves, here is how to master the art of the coastal weekend getaway.',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    href: '/journal/alibaug-private-villa-guide',
+      'Why discerning patrons are choosing private pool villas with dedicated in-house chefs over traditional luxury hotels for culinary getaways.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+    href: '/blog',
   },
   {
     id: 3,
-    category: 'Epicurean Journeys',
+    category: 'Architectural Haven',
     readTime: '6 min read',
     date: 'Oct 28, 2026',
-    title: 'Feasts by the Pool: Inside Wandernest’s Private Chef Philosophy',
+    title: 'Alibaug Unveiled: The Secrets of Secluded Coastal Living',
     excerpt:
-      'How our in-house culinary artisans bridge ancient Konkani claypot recipes with Michelin-calibre presentation on your private terrace.',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-    href: '/journal/feasts-by-the-pool-chef-philosophy',
+      'An exclusive look behind the private gates of Awas and Kihim Beach, where brutalist design meets lush coconut groves.',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    href: '/blog',
   },
 ];
 
@@ -52,11 +52,11 @@ export default function TravelJournal() {
                 The Travel Journal
               </span>
             </div>
-            <h2 className="heading-lg text-[#171717] tracking-tight">
-              The Luxe Digest
+            <h2 className="heading-lg text-foreground tracking-tight">
+              The Luxe Journal
             </h2>
             <p className="text-gray-700 text-sm md:text-base mt-1 font-light">
-              Architectural explorations, epicurean guides, and insider weekend escapes.
+              Curated itineraries, culinary inspirations, and architectural stories.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export default function TravelJournal() {
               </div>
 
               {/* Serif Title */}
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#171717] leading-snug group-hover:text-gold-dark transition-colors mb-3">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-foreground leading-snug group-hover:text-gold-dark transition-colors mb-3">
                 <Link href={article.href}>
                   {article.title}
                 </Link>
@@ -113,7 +113,7 @@ export default function TravelJournal() {
               <div className="mt-auto pt-2">
                 <Link
                   href={article.href}
-                  className="relative inline-flex items-center gap-1.5 text-xs font-semibold text-[#171717] uppercase tracking-wider group/link pb-1"
+                  className="relative inline-flex items-center gap-1.5 text-xs font-semibold text-foreground uppercase tracking-wider group/link pb-1"
                 >
                   <span className="group-hover:text-gold-dark transition-colors">Read Story</span>
                   <span className="transition-transform group-hover:translate-x-1.5 text-gold-main">&rarr;</span>

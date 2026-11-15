@@ -45,11 +45,11 @@ const initialTestimonials = [
 ];
 
 const pressBrands = [
-  { name: 'Booldest', style: 'font-serif font-bold text-xl md:text-2xl text-[#171717] tracking-tight' },
-  { name: 'News', style: 'font-serif italic font-medium text-xl md:text-2xl text-[#171717]' },
-  { name: 'Sontawoon', style: 'font-sans font-bold text-base md:text-lg text-[#171717] tracking-wide' },
+  { name: 'Booldest', style: 'font-serif font-bold text-xl md:text-2xl text-foreground tracking-tight' },
+  { name: 'News', style: 'font-serif italic font-medium text-xl md:text-2xl text-foreground' },
+  { name: 'Sontawoon', style: 'font-sans font-bold text-base md:text-lg text-foreground tracking-wide' },
   { name: 'Dynamic search analytics', style: 'font-sans text-xs md:text-sm text-gray-700 font-medium tracking-tight' },
-  { name: 'Architectural Digest', style: 'font-serif font-semibold text-lg md:text-xl text-[#171717] tracking-tight' },
+  { name: 'Architectural Digest', style: 'font-serif font-semibold text-lg md:text-xl text-foreground tracking-tight' },
 ];
 
 export default function TestimonialsSection() {
@@ -159,7 +159,7 @@ export default function TestimonialsSection() {
                 Guest Endorsements
               </span>
             </div>
-            <h2 className="heading-lg text-[#171717] tracking-tight">
+            <h2 className="heading-lg text-foreground tracking-tight">
               Testimonials / Trust
             </h2>
             <p className="text-gray-700 text-sm font-light mt-1">
@@ -177,7 +177,7 @@ export default function TestimonialsSection() {
               aria-label="Previous Testimonial"
               className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 canScrollLeft
-                  ? 'border-black/20 text-[#171717] hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
+                  ? 'border-black/20 text-foreground hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
                   : 'border-black/5 text-gray-300 cursor-not-allowed opacity-50'
               }`}
             >
@@ -194,7 +194,7 @@ export default function TestimonialsSection() {
               aria-label="Next Testimonial"
               className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 canScrollRight
-                  ? 'border-black/20 text-[#171717] hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
+                  ? 'border-black/20 text-foreground hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
                   : 'border-black/5 text-gray-300 cursor-not-allowed opacity-50'
               }`}
             >
@@ -215,12 +215,12 @@ export default function TestimonialsSection() {
               return (
                 <div
                   key={item.id}
-                  className="bg-[#f8eedf] rounded-2xl p-8 md:p-10 w-[300px] sm:w-[360px] md:w-[420px] flex-none snap-start flex flex-col items-center justify-center text-center shadow-sm border border-[#ede1ce] relative overflow-hidden"
+                  className="bg-brand-cream-warm rounded-2xl p-8 md:p-10 w-[300px] sm:w-[360px] md:w-[420px] flex-none snap-start flex flex-col items-center justify-center text-center shadow-sm border border-border-luxury relative overflow-hidden"
                 >
                   <span className="text-[11px] uppercase tracking-widest text-gold-dark font-bold mb-2">
                     {item.subtitle}
                   </span>
-                  <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#171717] tracking-tight leading-none mb-3">
+                  <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground tracking-tight leading-none mb-3">
                     {item.title}
                   </h3>
                   <p className="font-sans text-xs sm:text-sm text-gray-700 font-light max-w-xs">
@@ -234,18 +234,18 @@ export default function TestimonialsSection() {
             return (
               <div
                 key={item.id}
-                className="bg-[#f8eedf] rounded-2xl p-6 md:p-8 w-[300px] sm:w-[340px] md:w-[380px] flex-none snap-start flex flex-col justify-between shadow-sm border border-[#ede1ce]"
+                className="bg-brand-cream-warm rounded-2xl p-6 md:p-8 w-[300px] sm:w-[340px] md:w-[380px] flex-none snap-start flex flex-col justify-between shadow-sm border border-border-luxury"
               >
                 <div>
                   <div className="flex text-gold-main text-sm mb-4">
                     {'★'.repeat(item.rating)}
                   </div>
-                  <p className="font-sans text-sm md:text-base text-[#171717] leading-relaxed font-light mb-6">
+                  <p className="font-sans text-sm md:text-base text-foreground leading-relaxed font-light mb-6">
                     &ldquo;{item.quote}&rdquo;
                   </p>
                 </div>
 
-                <div className="flex items-center gap-3 pt-4 border-t border-[#ede1ce]">
+                <div className="flex items-center gap-3 pt-4 border-t border-border-luxury">
                   <div className="w-10 h-10 rounded-full overflow-hidden relative flex-shrink-0 bg-gray-200 border-2 border-white shadow-xs">
                     <Image
                       src={item.avatar}
@@ -256,7 +256,7 @@ export default function TestimonialsSection() {
                     />
                   </div>
                   <div>
-                    <p className="font-sans text-sm font-bold text-[#171717]">{item.author}</p>
+                    <p className="font-sans text-sm font-bold text-foreground">{item.author}</p>
                     <p className="text-xs text-gray-600">{item.stay}</p>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* ─── INLINE FORM: SHARE YOUR PATRON EXPERIENCE ──────────────────────── */}
-        <div className="mt-14 p-6 sm:p-8 md:p-10 rounded-3xl bg-[#f8eedf] border border-[#ede1ce] shadow-sm relative overflow-hidden">
+        <div className="mt-14 p-6 sm:p-8 md:p-10 rounded-3xl bg-brand-cream-warm border border-border-luxury shadow-sm relative overflow-hidden">
           {/* Subtle Top Gold Accent Line */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-main to-transparent" />
 
@@ -277,7 +277,7 @@ export default function TestimonialsSection() {
                 <span className="text-xs uppercase tracking-widest text-gold-dark font-bold block mb-1">
                   Patron Community
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] tracking-tight">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground tracking-tight">
                   Share Your Villa Experience
                 </h3>
                 <p className="text-sm text-gray-700 font-light mt-1">
@@ -339,7 +339,7 @@ export default function TestimonialsSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* 1. Full Name */}
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#171717] mb-1.5">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-foreground mb-1.5">
                     Your Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -349,13 +349,13 @@ export default function TestimonialsSection() {
                     onChange={handleInputChange}
                     placeholder="e.g. Rohini Deshmukh"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#ede1ce] text-[#171717] placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors shadow-2xs"
+                    className="w-full px-4 py-3 rounded-xl bg-white/90 border border-border-luxury text-foreground placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors shadow-2xs"
                   />
                 </div>
 
                 {/* 2. Villa / Destination Stayed */}
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#171717] mb-1.5">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-foreground mb-1.5">
                     Villa or Destination
                   </label>
                   <input
@@ -364,14 +364,14 @@ export default function TestimonialsSection() {
                     value={formData.stay}
                     onChange={handleInputChange}
                     placeholder="e.g. The Cloud Retreat, Lonavla"
-                    className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#ede1ce] text-[#171717] placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors shadow-2xs"
+                    className="w-full px-4 py-3 rounded-xl bg-white/90 border border-border-luxury text-foreground placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors shadow-2xs"
                   />
                 </div>
               </div>
 
               {/* 3. Review Comments Textarea */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#171717] mb-1.5">
+                <label className="block text-xs font-semibold uppercase tracking-wider text-foreground mb-1.5">
                   Your Review &amp; Comments <span className="text-red-500">*</span>
                 </label>
                 <textarea
@@ -381,7 +381,7 @@ export default function TestimonialsSection() {
                   onChange={handleInputChange}
                   placeholder="Tell us about the private pool, culinary experience, views, and concierge hospitality during your stay..."
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#ede1ce] text-[#171717] placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors resize-none shadow-2xs"
+                  className="w-full px-4 py-3 rounded-xl bg-white/90 border border-border-luxury text-foreground placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main focus:ring-1 focus:ring-gold-main transition-colors resize-none shadow-2xs"
                 />
               </div>
 

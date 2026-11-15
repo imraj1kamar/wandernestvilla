@@ -260,7 +260,7 @@ const amenitiesList = [
   { 
     name: 'Private Heated Infinity Pool', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M2 12c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0s3.5 2 5 0M2 17c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0s3.5 2 5 0" />
       </svg>
     ) 
@@ -268,7 +268,7 @@ const amenitiesList = [
   { 
     name: 'Dedicated In-House Master Chef', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z" />
         <line x1="6" y1="17" x2="18" y2="17" />
       </svg>
@@ -277,7 +277,7 @@ const amenitiesList = [
   { 
     name: '24/7 Discrete Butler Service', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M6 15a6 6 0 0 1 12 0H6z" />
         <path d="M2 17h20v2H2z" />
         <path d="M12 9v-2" />
@@ -288,7 +288,7 @@ const amenitiesList = [
   { 
     name: 'High-Speed Fiber WiFi (1 Gbps)', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M5 12.55a11 11 0 0 1 14.08 0" />
         <path d="M1.42 9a16 16 0 0 1 21.16 0" />
         <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
@@ -299,7 +299,7 @@ const amenitiesList = [
   { 
     name: 'Central Climate Control AC', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M12 2v20M12 2l3 3M12 2L9 5M12 22l3-3M12 22l-3-3M2 12h20M2 12l3 3M2 12l3-3M22 12l-3 3M22 12l-3-3" />
       </svg>
     ) 
@@ -307,7 +307,7 @@ const amenitiesList = [
   { 
     name: 'Direct Waterfront / Valley Access', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M22 12l-10-8-10 8M12 22V12" />
         <path d="M2 20c1.5-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0" />
       </svg>
@@ -316,7 +316,7 @@ const amenitiesList = [
   { 
     name: 'Alfresco Gourmet BBQ Lawn', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M3 14h18M6 14l-2 7M18 14l2 7M10 14v7M14 14v7M5 10c0-3 3-5 7-5s7 2 7 5H5z" />
         <path d="M12 2v3M9 2.5v2M15 2.5v2" />
       </svg>
@@ -325,7 +325,7 @@ const amenitiesList = [
   { 
     name: 'Acoustic Marshall Sound Audio', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M9 18V5l12-2v13" />
         <circle cx="6" cy="18" r="3" />
         <circle cx="18" cy="16" r="3" />
@@ -335,7 +335,7 @@ const amenitiesList = [
   { 
     name: '100% Uninterrupted Power Backup', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
       </svg>
     ) 
@@ -343,7 +343,7 @@ const amenitiesList = [
   { 
     name: 'Secure Gated Valet Parking', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M14 16H9m10 0h3v-3.15a1 1 0 00-.84-.99L16 11l-2.7-3.6a2 2 0 00-1.6-.8H9.3a2 2 0 00-1.6.8L5 11l-5.16.86a1 1 0 00-.84.99V16h3" />
         <circle cx="6.5" cy="16.5" r="2.5" />
         <circle cx="16.5" cy="16.5" r="2.5" />
@@ -353,7 +353,7 @@ const amenitiesList = [
   { 
     name: 'Private Organic Herb Gardens', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M11 20A7 7 0 0 1 4 13V4h9a7 7 0 0 1 7 7v9h-9Z" />
         <path d="M11 20V10" />
       </svg>
@@ -362,7 +362,7 @@ const amenitiesList = [
   { 
     name: 'Egyptian Cotton Linens & Robes', 
     icon: (
-      <svg className="w-5 h-5 text-[#aa8623]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <svg className="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
         <path d="M20 20h-4v-4H8v4H4" />
         <path d="M4 16V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8" />
         <path d="M12 4v8M8 12h8" />
@@ -437,12 +437,12 @@ function VillaDetailsContent() {
   };
 
   return (
-    <div className="w-full bg-[#f8f7f2] text-[#171717] min-h-screen">
+    <div className="w-full bg-brand-light text-foreground min-h-screen">
       
       {/* ══════════════════════════════════════════════════════════════════════
-          1. TOP SECTION (Dark Navy Theme - bg-[#12151e])
+          1. TOP SECTION (Dark Navy Theme - bg-brand-dark)
          ══════════════════════════════════════════════════════════════════════ */}
-      <section className="w-full bg-[#12151e] text-white pt-28 md:pt-36 pb-12 md:pb-16 border-b border-white/10">
+      <section className="w-full bg-brand-dark text-white pt-28 md:pt-36 pb-12 md:pb-16 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
 
           {/* Breadcrumbs & Badges Row */}
@@ -635,9 +635,9 @@ function VillaDetailsContent() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          2. BOTTOM SECTION (Light Cream Theme - bg-[#f8f7f2])
+          2. BOTTOM SECTION (Light Cream Theme - bg-brand-light)
          ══════════════════════════════════════════════════════════════════════ */}
-      <section className="w-full bg-[#f8f7f2] py-14 md:py-20">
+      <section className="w-full bg-brand-light py-14 md:py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
@@ -648,8 +648,8 @@ function VillaDetailsContent() {
             <div className="lg:col-span-8 flex flex-col space-y-12">
 
               {/* Quick Info Bar */}
-              <div className="p-6 rounded-2xl bg-white border border-[#ede1ce] shadow-2xs">
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm sm:text-base font-semibold text-[#171717] font-sans">
+              <div className="p-6 rounded-2xl bg-white border border-border-luxury shadow-2xs">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm sm:text-base font-semibold text-foreground font-sans">
                   <span>{villa.specsSummary}</span>
                   <span className="text-gold-main">&bull;</span>
                   <span className="text-gold-dark font-medium">Temperature-Controlled Pool</span>
@@ -659,14 +659,14 @@ function VillaDetailsContent() {
               </div>
 
               {/* Description Section */}
-              <div className="border-b border-[#ede1ce] pb-10">
+              <div className="border-b border-border-luxury pb-10">
                 <div className="inline-flex items-center gap-2 mb-2">
                   <span className="w-6 h-[1px] bg-gold-main" />
                   <span className="text-xs uppercase tracking-widest text-gold-dark font-bold font-sans">
                     Estate Architecture &amp; Ambiance
                   </span>
                 </div>
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] mb-4">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">
                   The Experience
                 </h2>
                 <div className="font-sans text-base text-gray-700 leading-relaxed font-light space-y-4">
@@ -685,24 +685,24 @@ function VillaDetailsContent() {
               </div>
 
               {/* Exclusive Amenities Grid */}
-              <div className="border-b border-[#ede1ce] pb-10">
+              <div className="border-b border-border-luxury pb-10">
                 <div className="inline-flex items-center gap-2 mb-2">
                   <span className="w-6 h-[1px] bg-gold-main" />
                   <span className="text-xs uppercase tracking-widest text-gold-dark font-bold font-sans">
                     Curated Inclusions
                   </span>
                 </div>
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] mb-6">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Signature Estate Amenities
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                   {amenitiesList.map((item) => (
                     <div
                       key={item.name}
-                      className="p-4 rounded-2xl bg-white border border-[#ede1ce] shadow-2xs hover:border-gold-main hover:shadow-sm transition-all"
+                      className="p-4 rounded-2xl bg-white border border-border-luxury shadow-2xs hover:border-gold-main hover:shadow-sm transition-all"
                     >
                       <span className="text-2xl mb-2 block">{item.icon}</span>
-                      <p className="font-sans text-xs sm:text-sm font-semibold text-[#171717] leading-snug">
+                      <p className="font-sans text-xs sm:text-sm font-semibold text-foreground leading-snug">
                         {item.name}
                       </p>
                     </div>
@@ -711,24 +711,24 @@ function VillaDetailsContent() {
               </div>
 
               {/* Sleeping Suites Breakdown */}
-              <div className="border-b border-[#ede1ce] pb-10">
+              <div className="border-b border-border-luxury pb-10">
                 <div className="inline-flex items-center gap-2 mb-2">
                   <span className="w-6 h-[1px] bg-gold-main" />
                   <span className="text-xs uppercase tracking-widest text-gold-dark font-bold font-sans">
                     Accommodations
                   </span>
                 </div>
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] mb-6">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Sleeping Suites &amp; Arrangements
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {villa.bedroomsList?.map((suite, idx) => (
-                    <div key={idx} className="p-5 rounded-2xl bg-white border border-[#ede1ce]">
+                    <div key={idx} className="p-5 rounded-2xl bg-white border border-border-luxury">
                       <div className="flex items-center gap-2.5 mb-1.5">
                         <span className="text-lg">🛏️</span>
-                        <h4 className="font-serif text-base font-bold text-[#171717]">
+                        <h3 className="font-serif text-base font-bold text-foreground">
                           {suite.name}
-                        </h4>
+                        </h3>
                       </div>
                       <p className="font-sans text-xs text-gray-600 font-light leading-relaxed">
                         {suite.type}
@@ -739,14 +739,14 @@ function VillaDetailsContent() {
               </div>
 
               {/* In-House Culinary & Dining Staff */}
-              <div className="border-b border-[#ede1ce] pb-10">
+              <div className="border-b border-border-luxury pb-10">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-3xl">👨‍🍳</span>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717]">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
                     In-House Culinary &amp; Butler Team
                   </h2>
                 </div>
-                <div className="bg-[#f8eedf] p-6 sm:p-8 rounded-3xl border border-[#ede1ce]">
+                <div className="bg-brand-cream-warm p-6 sm:p-8 rounded-3xl border border-border-luxury">
                   <p className="font-sans text-base text-gray-800 leading-relaxed font-light mb-4">
                     Your reservation includes a professionally trained private chef and discrete butlers who attend exclusively to your group. Every breakfast is freshly prepared complimentary, and bespoke lunch and dinner menus (coastal seafood degustations, traditional claypot curries, or continental grills) can be tailored to your dietary wishes.
                   </p>
@@ -759,16 +759,16 @@ function VillaDetailsContent() {
               </div>
 
               {/* Master Rules */}
-              <div className="border-b border-[#ede1ce] pb-10">
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] mb-6">
+              <div className="border-b border-border-luxury pb-10">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Estate Guidelines &amp; House Rules
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {masterRules.map((rule) => (
-                    <div key={rule.title} className="p-4 rounded-2xl bg-white border border-[#ede1ce]">
-                      <h4 className="font-serif text-base font-bold text-[#171717] mb-1">
+                    <div key={rule.title} className="p-4 rounded-2xl bg-white border border-border-luxury">
+                      <h3 className="font-serif text-base font-bold text-foreground mb-1">
                         {rule.title}
-                      </h4>
+                      </h3>
                       <p className="font-sans text-xs text-gray-600 font-light leading-relaxed">
                         {rule.detail}
                       </p>
@@ -778,11 +778,11 @@ function VillaDetailsContent() {
               </div>
 
               {/* Meet the Owner & Host */}
-              <div className="border-b border-[#ede1ce] pb-10">
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] mb-6">
+              <div className="border-b border-border-luxury pb-10">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Meet Your Host &amp; Curator
                 </h2>
-                <div className="p-6 sm:p-8 rounded-3xl bg-white border border-[#ede1ce] shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <div className="p-6 sm:p-8 rounded-3xl bg-white border border-border-luxury shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-6">
                   <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold-main shadow-md">
                     <Image
                       src={villa.host.avatar}
@@ -794,7 +794,7 @@ function VillaDetailsContent() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#171717]">
+                      <h3 className="font-serif text-xl sm:text-2xl font-bold text-foreground">
                         {villa.host.name}
                       </h3>
                       <span className="text-xs px-2.5 py-0.5 rounded-full bg-gold-main/20 text-gold-dark font-semibold">
@@ -814,10 +814,10 @@ function VillaDetailsContent() {
               {/* Verified Patron Ratings & Reviews */}
               <div>
                 <div className="flex items-baseline justify-between mb-6">
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717]">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
                     Patron Testimonials
                   </h2>
-                  <div className="flex items-center gap-2 text-sm font-semibold text-[#171717]">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                     <span className="text-gold-main font-serif text-base">★</span>
                     <span>{villa.rating}</span>
                     <span className="text-gray-500 font-light">({villa.reviewsCount} verified reviews)</span>
@@ -825,54 +825,54 @@ function VillaDetailsContent() {
                 </div>
 
                 {/* Star rating breakdown grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-5 rounded-2xl bg-white border border-[#ede1ce]">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 p-5 rounded-2xl bg-white border border-border-luxury">
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Cleanliness</span>
-                    <span className="font-bold text-[#171717]">5.0</span>
+                    <span className="font-bold text-foreground">5.0</span>
                   </div>
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Accuracy</span>
-                    <span className="font-bold text-[#171717]">4.9</span>
+                    <span className="font-bold text-foreground">4.9</span>
                   </div>
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Communication</span>
-                    <span className="font-bold text-[#171717]">5.0</span>
+                    <span className="font-bold text-foreground">5.0</span>
                   </div>
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Location</span>
-                    <span className="font-bold text-[#171717]">4.9</span>
+                    <span className="font-bold text-foreground">4.9</span>
                   </div>
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Hospitality &amp; Chef</span>
-                    <span className="font-bold text-[#171717]">5.0</span>
+                    <span className="font-bold text-foreground">5.0</span>
                   </div>
                   <div className="flex justify-between items-center text-xs font-sans">
                     <span className="text-gray-600">Overall Value</span>
-                    <span className="font-bold text-[#171717]">4.9</span>
+                    <span className="font-bold text-foreground">4.9</span>
                   </div>
                 </div>
 
                 {/* 2 Featured Testimonials */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-5 rounded-2xl bg-white border border-[#ede1ce]">
+                  <div className="p-5 rounded-2xl bg-white border border-border-luxury">
                     <div className="flex items-center gap-2 mb-2 text-gold-main font-serif text-xs">
                       ★★★★★
                     </div>
                     <p className="font-sans text-xs text-gray-700 italic leading-relaxed mb-3">
                       &quot;An extraordinary estate experience. The private chef prepared seafood that rivalled five-star restaurants in Mumbai. Absolute privacy, exquisite pool.&quot;
                     </p>
-                    <span className="text-[11px] font-bold text-[#171717] block">Arjun &amp; Priya Nair</span>
+                    <span className="text-[11px] font-bold text-foreground block">Arjun &amp; Priya Nair</span>
                     <span className="text-[10px] text-gray-500 font-light">Stayed November 2026</span>
                   </div>
 
-                  <div className="p-5 rounded-2xl bg-white border border-[#ede1ce]">
+                  <div className="p-5 rounded-2xl bg-white border border-border-luxury">
                     <div className="flex items-center gap-2 mb-2 text-gold-main font-serif text-xs">
                       ★★★★★
                     </div>
                     <p className="font-sans text-xs text-gray-700 italic leading-relaxed mb-3">
                       &quot;The architectural details blew our family away. Check-in was effortless, and having a dedicated butler made our weekend completely carefree.&quot;
                     </p>
-                    <span className="text-[11px] font-bold text-[#171717] block">Kavita Singhal</span>
+                    <span className="text-[11px] font-bold text-foreground block">Kavita Singhal</span>
                     <span className="text-[10px] text-gray-500 font-light">Stayed October 2026</span>
                   </div>
                 </div>
@@ -884,13 +884,13 @@ function VillaDetailsContent() {
                 4. RIGHT COLUMN (Sticky Booking Sidebar - ~32% width)
                ──────────────────────────────────────────────────────────────── */}
             <div className="lg:col-span-4 sticky top-28 z-20">
-              <div className="bg-white rounded-3xl border border-[#ede1ce] shadow-2xl overflow-hidden">
+              <div className="bg-white rounded-3xl border border-border-luxury shadow-2xl overflow-hidden">
                 
                 {/* Price Header */}
-                <div className="p-6 sm:p-7 border-b border-gray-100 bg-[#fbf7f0]">
+                <div className="p-6 sm:p-7 border-b border-gray-100 bg-brand-cream">
                   <div className="flex items-baseline justify-between">
                     <div>
-                      <span className="font-serif text-3xl sm:text-4xl font-bold text-[#171717]">
+                      <span className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
                         ₹{villa.pricePerNight.toLocaleString('en-IN')}
                       </span>
                       <span className="text-xs text-gray-600 font-sans ml-1">
@@ -916,7 +916,7 @@ function VillaDetailsContent() {
                         type="date"
                         value={checkIn}
                         onChange={(e) => setCheckIn(e.target.value)}
-                        className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm text-[#171717] focus:outline-none focus:border-gold-main bg-gray-50/50"
+                        className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm text-foreground focus:outline-none focus:border-gold-main bg-gray-50/50"
                       />
                     </div>
                     <div>
@@ -927,7 +927,7 @@ function VillaDetailsContent() {
                         type="date"
                         value={checkOut}
                         onChange={(e) => setCheckOut(e.target.value)}
-                        className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm text-[#171717] focus:outline-none focus:border-gold-main bg-gray-50/50"
+                        className="w-full px-3 py-2.5 rounded-xl border border-gray-200 text-xs sm:text-sm text-foreground focus:outline-none focus:border-gold-main bg-gray-50/50"
                       />
                     </div>
                   </div>
@@ -940,7 +940,7 @@ function VillaDetailsContent() {
                     <select
                       value={guestsCount}
                       onChange={(e) => setGuestsCount(e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-[#171717] font-medium focus:outline-none focus:border-gold-main bg-gray-50/50 cursor-pointer"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-foreground font-medium focus:outline-none focus:border-gold-main bg-gray-50/50 cursor-pointer"
                     >
                       <option value="2 Guests">2 Guests (Couple Retreat)</option>
                       <option value="4 Guests">4 Guests (2 Bedroom Suites)</option>
@@ -953,7 +953,7 @@ function VillaDetailsContent() {
                   <div className="space-y-3 pt-3 border-t border-gray-100 text-sm text-gray-600 font-sans">
                     <div className="flex justify-between items-center">
                       <span>₹{villa.pricePerNight.toLocaleString('en-IN')} x {nights} nights</span>
-                      <span className="font-medium text-[#171717]">₹{basePrice.toLocaleString('en-IN')}</span>
+                      <span className="font-medium text-foreground">₹{basePrice.toLocaleString('en-IN')}</span>
                     </div>
 
                     <div className="flex justify-between items-center text-emerald-700">
@@ -963,24 +963,24 @@ function VillaDetailsContent() {
 
                     <div className="flex justify-between items-center">
                       <span>Luxury Butler &amp; Chef Service</span>
-                      <span className="font-medium text-[#171717]">₹{serviceFee.toLocaleString('en-IN')}</span>
+                      <span className="font-medium text-foreground">₹{serviceFee.toLocaleString('en-IN')}</span>
                     </div>
 
                     <div className="flex justify-between items-center">
                       <span>GST &amp; Hospitality Taxes (18%)</span>
-                      <span className="font-medium text-[#171717]">₹{gstTaxes.toLocaleString('en-IN')}</span>
+                      <span className="font-medium text-foreground">₹{gstTaxes.toLocaleString('en-IN')}</span>
                     </div>
 
                     <div className="flex justify-between items-center">
                       <span>Refundable Damage Deposit</span>
-                      <span className="font-medium text-[#171717]">₹{damageDeposit.toLocaleString('en-IN')}</span>
+                      <span className="font-medium text-foreground">₹{damageDeposit.toLocaleString('en-IN')}</span>
                     </div>
                   </div>
 
                 </div>
 
-                {/* Estimated Total Box (Dark Navy bg-[#12151e]) */}
-                <div className="bg-[#12151e] p-6 text-white space-y-4">
+                {/* Estimated Total Box (Dark Navy bg-brand-dark) */}
+                <div className="bg-brand-dark p-6 text-white space-y-4">
                   <div className="flex items-center justify-between border-b border-white/10 pb-3">
                     <span className="text-xs uppercase tracking-widest text-white/70 font-semibold font-sans">
                       Estimated Total
@@ -1016,7 +1016,7 @@ function VillaDetailsContent() {
               </div>
 
               {/* Trust Highlights Below Card */}
-              <div className="p-5 mt-4 rounded-2xl bg-white border border-[#ede1ce] space-y-3">
+              <div className="p-5 mt-4 rounded-2xl bg-white border border-border-luxury space-y-3">
                 <div className="flex items-center gap-3 text-xs text-gray-700">
                   <span className="text-emerald-600 font-bold">✓</span>
                   <span><strong>Free Cancellation</strong> up to 14 days before check-in</span>
@@ -1092,7 +1092,7 @@ export default function VillaDetailsPage() {
   return (
     <Suspense
       fallback={
-        <div className="w-full min-h-screen bg-[#12151e] flex items-center justify-center">
+        <div className="w-full min-h-screen bg-brand-dark flex items-center justify-center">
           <div className="flex flex-col items-center gap-3">
             <div className="w-8 h-8 border-2 border-gold-main border-t-transparent rounded-full animate-spin" />
             <span className="font-serif text-sm tracking-widest text-gold-light uppercase">

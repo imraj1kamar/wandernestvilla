@@ -137,7 +137,7 @@ export default function ContactForm() {
                 name="destination"
                 value={formData.destination}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-xl bg-[#1e2235] border border-white/15 text-white text-sm focus:outline-none focus:border-gold-main transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 text-white text-sm focus:outline-none focus:border-gold-main transition-colors"
               >
                 <option value="Lonavla">Lonavla &amp; Khandala</option>
                 <option value="Alibaug">Alibaug Beachfront</option>
@@ -173,7 +173,7 @@ export default function ContactForm() {
                 name="guests"
                 value={formData.guests}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-xl bg-[#1e2235] border border-white/15 text-white text-sm focus:outline-none focus:border-gold-main transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-brand-card border border-white/15 text-white text-sm focus:outline-none focus:border-gold-main transition-colors"
               >
                 <option value="2-4 Guests">2–4 Guests (Intimate Stay)</option>
                 <option value="5-8 Guests">5–8 Guests (Family Holiday)</option>

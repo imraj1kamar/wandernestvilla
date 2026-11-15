@@ -16,8 +16,8 @@ export default function InnerCircleCTA() {
         </div>
 
         {/* Large Gold Serif Heading */}
-        <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-gold-main tracking-tight leading-[1.15] mb-5 drop-shadow-md">
-          Access the Unattainable
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.15] mb-5 drop-shadow-md">
+          Unlock Secret Escapes &amp; Member-Only Pricing
         </h2>
 
         {/* Subtitle */}

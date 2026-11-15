@@ -102,7 +102,7 @@ const categories = [
 
 export default function BlogHubPage() {
   return (
-    <div className="w-full bg-brand-light text-[#171717] pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
+    <div className="w-full bg-brand-light text-foreground pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         {/* ─── EDITORIAL HEADER ────────────────────────────────────────────── */}
@@ -115,7 +115,7 @@ export default function BlogHubPage() {
             <span className="w-8 h-[1px] bg-gold-main" />
           </div>
 
-          <h1 className="heading-xl text-[#171717] tracking-tight mb-4">
+          <h1 className="heading-xl text-foreground tracking-tight mb-4">
             The Luxe Journal
           </h1>
 
@@ -131,8 +131,8 @@ export default function BlogHubPage() {
                 type="button"
                 className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm transition-all duration-300 font-medium cursor-pointer ${
                   idx === 0
-                    ? 'bg-[#171717] text-white shadow-sm'
-                    : 'bg-white border border-[#ede1ce] text-gray-700 hover:border-gold-main hover:text-gold-dark'
+                    ? 'bg-foreground text-white shadow-sm'
+                    : 'bg-white border border-border-luxury text-gray-700 hover:border-gold-main hover:text-gold-dark'
                 }`}
               >
                 {cat}
@@ -173,7 +173,7 @@ export default function BlogHubPage() {
                 </div>
 
                 {/* Article Serif Title */}
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#171717] leading-snug group-hover:text-gold-dark transition-colors mb-3">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-foreground leading-snug group-hover:text-gold-dark transition-colors mb-3">
                   <Link href={article.href}>
                     {article.title}
                   </Link>
@@ -202,11 +202,11 @@ export default function BlogHubPage() {
 
         {/* ─── BOTTOM EDITORIAL NEWSLETTER CTA ─────────────────────────────── */}
         <RevealOnScroll yOffset={30} duration={1000}>
-          <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-[#f8eedf] border border-[#ede1ce] text-center max-w-3xl mx-auto shadow-sm">
+          <div className="mt-20 p-8 sm:p-12 rounded-3xl bg-brand-cream-warm border border-border-luxury text-center max-w-3xl mx-auto shadow-sm">
             <span className="text-xs uppercase tracking-widest text-gold-dark font-bold block mb-2">
               The Weekly Digest
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#171717] tracking-tight mb-2">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-2">
               Stories from Maharashtra’s Most Secluded Estates
             </h3>
             <p className="font-sans text-sm text-gray-700 font-light max-w-xl mx-auto mb-6">
@@ -216,7 +216,7 @@ export default function BlogHubPage() {
               <input
                 type="email"
                 placeholder="Enter your personal email"
-                className="w-full px-5 py-3 rounded-xl bg-white border border-[#ede1ce] text-[#171717] placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main"
+                className="w-full px-5 py-3 rounded-xl bg-white border border-border-luxury text-foreground placeholder-gray-400 text-sm focus:outline-none focus:border-gold-main"
               />
               <button
                 type="button"

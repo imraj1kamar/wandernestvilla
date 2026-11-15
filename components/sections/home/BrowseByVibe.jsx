@@ -9,43 +9,43 @@ const vibes = [
     title: 'Heritage Palaces',
     count: '12 Regal Estates',
     location: 'Karjat & Udaipur',
-    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/heritage-palaces',
+    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+    href: '/villas?vibe=heritage',
   },
   {
     title: 'Beachfront Escapes',
     count: '18 Oceanfront Mansions',
     location: 'Alibaug & Goa',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/beachfront-escapes',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    href: '/villas?vibe=beachfront',
   },
   {
     title: 'High-Altitude Retreats',
     count: '15 Mountain Sanctuaries',
     location: 'Lonavla & Kasauli',
-    image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/high-altitude-retreats',
+    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    href: '/villas?vibe=mountain',
   },
   {
-    title: 'Party Villas',
+    title: 'Event Estates',
     count: '20 Celebration Compounds',
-    location: 'Pawna & Khandala',
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/party-villas',
+    location: 'Pawna & Karjat',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    href: '/villas?vibe=events',
   },
   {
     title: 'Private Island Villas',
     count: '6 Exclusive Sanctuaries',
     location: 'Lakeside & Coastal',
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/private-islands',
+    href: '/villas?vibe=islands',
   },
   {
     title: 'Forest Sanctuaries',
     count: '9 Wilderness Estates',
-    location: 'Igatpuri & Mahabaleshwar',
+    location: 'Igatpuri & Coorg',
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    href: '/vibe/forest-sanctuaries',
+    href: '/villas?vibe=forest',
   },
 ];
 
@@ -100,7 +100,7 @@ export default function BrowseByVibe() {
                 Curated Collections
               </span>
             </div>
-            <h2 className="heading-lg text-[#171717] tracking-tight">
+            <h2 className="heading-lg text-foreground tracking-tight">
               Browse by Vibe
             </h2>
             <p className="text-gray-700 text-sm md:text-base mt-1 font-light">
@@ -123,7 +123,7 @@ export default function BrowseByVibe() {
               aria-label="Previous Slide"
               className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 canScrollLeft
-                  ? 'border-black/20 text-[#171717] hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
+                  ? 'border-black/20 text-foreground hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
                   : 'border-black/5 text-gray-300 cursor-not-allowed opacity-50'
               }`}
             >
@@ -141,7 +141,7 @@ export default function BrowseByVibe() {
               aria-label="Next Slide"
               className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                 canScrollRight
-                  ? 'border-black/20 text-[#171717] hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
+                  ? 'border-black/20 text-foreground hover:border-gold-main hover:bg-gold-main hover:text-black shadow-sm cursor-pointer'
                   : 'border-black/5 text-gray-300 cursor-not-allowed opacity-50'
               }`}
             >
@@ -161,7 +161,7 @@ export default function BrowseByVibe() {
             <Link
               key={vibe.title}
               href={vibe.href}
-              className="group relative flex-none w-[260px] h-[330px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 snap-start block"
+              className="group relative flex-none w-[280px] h-[360px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 snap-start block"
             >
               {/* Background Image with hover scale */}
               <Image

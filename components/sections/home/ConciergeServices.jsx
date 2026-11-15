@@ -58,7 +58,7 @@ export default function ConciergeServices() {
               Bespoke Hospitality
             </span>
           </div>
-          <h2 className="heading-lg text-[#171717] tracking-tight">
+          <h2 className="heading-lg text-foreground tracking-tight">
             Signature Concierge Services
           </h2>
           <p className="text-gray-700 text-sm md:text-base mt-1 font-light max-w-2xl">
@@ -93,8 +93,8 @@ export default function ConciergeServices() {
                       <h3
                         className={`font-serif text-xl sm:text-2xl md:text-3xl transition-colors ${
                           isActive
-                            ? 'text-[#171717] font-bold'
-                            : 'text-gray-500 group-hover:text-[#171717] font-normal'
+                            ? 'text-foreground font-bold'
+                            : 'text-gray-500 group-hover:text-foreground font-normal'
                         }`}
                       >
                         {service.title}
