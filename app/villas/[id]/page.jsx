@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -384,7 +384,7 @@ const masterRules = [
   { title: 'Private Celebrations', detail: 'Intimate gatherings permitted up to 25 guests with prior concierge clearance' },
 ];
 
-export default function VillaDetailsPage() {
+function VillaDetailsContent() {
   const params = useParams();
   const villaId = params?.id ? String(params.id) : '1';
   const villa = villasDatabase[villaId] || villasDatabase['default'];
@@ -1085,5 +1085,24 @@ export default function VillaDetailsPage() {
       )}
 
     </div>
+  );
+}
+
+export default function VillaDetailsPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="w-full min-h-screen bg-[#12151e] flex items-center justify-center">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-8 h-8 border-2 border-gold-main border-t-transparent rounded-full animate-spin" />
+            <span className="font-serif text-sm tracking-widest text-gold-light uppercase">
+              Loading Wandernest Estate...
+            </span>
+          </div>
+        </div>
+      }
+    >
+      <VillaDetailsContent />
+    </Suspense>
   );
 }
