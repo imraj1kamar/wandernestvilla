@@ -47,6 +47,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
       bio: 'Aaditya is a connoisseur of coastal architecture and luxury hospitality. Along with his resident chef and discrete butler team, he ensures that every detail—from airport tarmac pick-ups to bespoke sunset seafood barbecues—is orchestrated flawlessly.',
     },
+    fullAddress: 'Pinto Vaddo, Near Candolim Beach Road, Candolim, Bardez, North Goa 403515, India',
+    googleMapSearchQuery: 'The Glasshouse Candolim North Goa',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Candolim,+Goa,+India&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Candolim Beach Shoreline', distance: '4 mins', desc: 'Direct private buggy transfer to pristine golden sands' },
+      { label: 'MOPA International Airport', distance: '45 mins', desc: 'Complimentary luxury SUV chauffeur service' },
+      { label: 'Dabolim Airport (GOI)', distance: '55 mins', desc: 'Express highway access across Zuari Bridge' },
+      { label: 'Aguada Fort & Helipad', distance: '10 mins', desc: 'Helicopter transfer landing pad available on request' },
+    ],
   },
   '2': {
     id: 2,
@@ -85,6 +94,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80',
       bio: 'Vikram and Radhika are passionate about Alibaug maritime history. They curate farm-fresh Konkani meals and private speedboat transfers for guests.',
     },
+    fullAddress: 'Awas Beach Road, Post Sasawane, Alibaug, Raigad, Maharashtra 402201, India',
+    googleMapSearchQuery: 'Awas Beach Alibaug Maharashtra',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Awas+Beach,+Alibaug,+Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Awas Beach & Shoreline', distance: '2 mins', desc: 'Direct private gated boardwalk onto secluded sand' },
+      { label: 'Mandwa RORO Jetty', distance: '12 mins', desc: 'Speedboat transfer directly from Gateway of India' },
+      { label: 'MTHL Atal Setu Highway', distance: '60 mins', desc: 'Smooth signal-free expressway commute from Mumbai' },
+      { label: 'The Boardwalk & Flamboyante', distance: '10 mins', desc: 'Celebrity dining & seaside cocktail lounges' },
+    ],
   },
   '3': {
     id: 3,
@@ -124,6 +142,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
       bio: 'Retired naval officer Sameer curates every stay with military precision and warm, heartfelt mountain hospitality.',
     },
+    fullAddress: 'Cliff Edge Road, Near Tiger Point, Kurvande, Lonavla, Maharashtra 410401, India',
+    googleMapSearchQuery: 'Tiger Point Lonavla Maharashtra',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Tiger+Point,+Lonavla,+Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Tiger Point Cliff View', distance: '2 mins', desc: 'Unobstructed 270° views above the Sahyadri clouds' },
+      { label: 'Mumbai-Pune Expressway', distance: '20 mins', desc: 'Quick access via Khandala exit gates' },
+      { label: 'Bhushi Dam & Waterfalls', distance: '8 mins', desc: 'Private guided monsoonal trail excursions' },
+      { label: 'Navi Mumbai Airport (NMI)', distance: '55 mins', desc: 'Seamless luxury vehicle mountain transfers' },
+    ],
   },
   '4': {
     id: 4,
@@ -164,6 +191,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
       bio: 'Direct descendant of Mewar royalty, Harshvardhan opens his private familial retreat to discerning travelers seeking authentic Rajputana heritage.',
     },
+    fullAddress: 'Rambagh Ghat, Haridas Ji Ki Magri, Lake Pichola, Udaipur, Rajasthan 313001, India',
+    googleMapSearchQuery: 'Lake Pichola Udaipur Rajasthan',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Lake+Pichola,+Udaipur,+Rajasthan&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Lake Pichola Water Edge', distance: '2 mins', desc: 'Private royal boat jetty and sunset cruising launch' },
+      { label: 'City Palace Udaipur', distance: '8 mins', desc: 'Exclusive heritage tour and private museum access' },
+      { label: 'Maharana Pratap Airport (UDR)', distance: '35 mins', desc: 'Executive airport reception and royal convoy' },
+      { label: 'Jagmandir Island Palace', distance: '5 mins', desc: 'Bespoke candlelit dining via private launch' },
+    ],
   },
   '5': {
     id: 5,
@@ -204,6 +240,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80',
       bio: 'Devraj and Maya created this eco-luxury farm sanctuary for city dwellers seeking silence, pristine air, and organic luxury dining.',
     },
+    fullAddress: 'Tata Road, Near Bhivpuri Foothills, Karjat, Raigad, Maharashtra 410201, India',
+    googleMapSearchQuery: 'Karjat Maharashtra Foothills',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Karjat,+Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Private Natural Lake & Orchard', distance: 'On Grounds', desc: '10-acre fully secluded gated compound' },
+      { label: 'Mumbai via Atal Setu', distance: '75 mins', desc: 'Relaxed scenic drive from South & Central Mumbai' },
+      { label: 'Bhivpuri Waterfalls & Trek', distance: '10 mins', desc: 'Private guided forest walks and nature trails' },
+      { label: 'Karjat Executive Helipad', distance: '12 mins', desc: 'Private helicopter charters available on request' },
+    ],
   },
   'default': {
     id: 1,
@@ -243,6 +288,15 @@ const villasDatabase = {
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
       bio: 'Aaditya is a connoisseur of coastal architecture and luxury hospitality. Along with his resident chef and discrete butler team, he ensures that every detail—from airport tarmac pick-ups to bespoke sunset seafood barbecues—is orchestrated flawlessly.',
     },
+    fullAddress: 'Pinto Vaddo, Near Candolim Beach Road, Candolim, Bardez, North Goa 403515, India',
+    googleMapSearchQuery: 'The Glasshouse Candolim North Goa',
+    mapEmbedUrl: 'https://maps.google.com/maps?q=Candolim,+Goa,+India&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    neighborhoodHighlights: [
+      { label: 'Candolim Beach Shoreline', distance: '4 mins', desc: 'Direct private buggy transfer to pristine golden sands' },
+      { label: 'MOPA International Airport', distance: '45 mins', desc: 'Complimentary luxury SUV chauffeur service' },
+      { label: 'Dabolim Airport (GOI)', distance: '55 mins', desc: 'Express highway access across Zuari Bridge' },
+      { label: 'Aguada Fort & Helipad', distance: '10 mins', desc: 'Helicopter transfer landing pad available on request' },
+    ],
   },
 };
 
@@ -528,12 +582,20 @@ function VillaDetailsContent() {
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-3">
               {villa.title}
             </h1>
-            <div className="flex items-center gap-2 text-sm md:text-base text-white/80 font-light">
+            <div className="flex flex-wrap items-center gap-2 text-sm md:text-base text-white/80 font-light">
               <svg className="w-4 h-4 text-gold-main flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
               <span>{villa.location}</span>
+              <span className="text-white/30 hidden sm:inline">•</span>
+              <a
+                href="#location-map"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-gold-light hover:text-white underline underline-offset-4 transition-colors"
+              >
+                <span>View on Google Map</span>
+                <span>↓</span>
+              </a>
             </div>
           </div>
 
@@ -723,9 +785,16 @@ function VillaDetailsContent() {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {villa.bedroomsList?.map((suite, idx) => (
-                    <div key={idx} className="p-5 rounded-2xl bg-white border border-border-luxury">
-                      <div className="flex items-center gap-2.5 mb-1.5">
-                        <span className="text-lg">🛏️</span>
+                    <div key={idx} className="p-5 rounded-2xl bg-white border border-border-luxury hover:border-gold-main/40 transition-all duration-200">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-8 h-8 rounded-lg bg-gold-main/10 border border-gold-main/20 flex items-center justify-center text-gold-dark flex-shrink-0">
+                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+                            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+                            <path d="M12 4v6" />
+                            <path d="M2 18h20" />
+                          </svg>
+                        </div>
                         <h3 className="font-serif text-base font-bold text-foreground">
                           {suite.name}
                         </h3>
@@ -741,7 +810,12 @@ function VillaDetailsContent() {
               {/* In-House Culinary & Dining Staff */}
               <div className="border-b border-border-luxury pb-10">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-3xl">👨‍🍳</span>
+                  <div className="w-10 h-10 rounded-xl bg-gold-main/15 border border-gold-main/30 flex items-center justify-center text-gold-dark flex-shrink-0">
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z" />
+                      <line x1="6" y1="17" x2="18" y2="17" />
+                    </svg>
+                  </div>
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
                     In-House Culinary &amp; Butler Team
                   </h2>
@@ -756,6 +830,134 @@ function VillaDetailsContent() {
                     <span>&bull; 24/7 Housekeeping</span>
                   </div>
                 </div>
+              </div>
+
+              {/* ─── LOCATION & INTERACTIVE GOOGLE MAP SECTION ──────────────────── */}
+              <div id="location-map" className="border-b border-border-luxury pb-10 scroll-mt-28">
+                
+                {/* Section Header with Direct Google Maps CTA */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+                  <div>
+                    <div className="inline-flex items-center gap-2 mb-1.5">
+                      <span className="w-6 h-[1px] bg-gold-main" />
+                      <span className="text-xs uppercase tracking-widest text-gold-dark font-bold font-sans">
+                        Sanctuary Location
+                      </span>
+                    </div>
+                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
+                      Where You&apos;ll Be
+                    </h2>
+                  </div>
+
+                  {/* Direct Google Maps External Button */}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                      villa.googleMapSearchQuery || `${villa.title} ${villa.location}`
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-main/10 border border-gold-main/30 text-gold-dark text-xs sm:text-sm font-semibold hover:bg-gold-main hover:text-black hover:border-gold-main transition-all duration-300 shadow-sm self-start sm:self-auto group"
+                    aria-label="Open villa location in Google Maps"
+                  >
+                    <svg className="w-4 h-4 text-gold-dark group-hover:text-black transition-colors flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <span>Open in Google Maps</span>
+                    <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+
+                {/* Exact Verified Address Box */}
+                <div className="flex items-start gap-3.5 p-4 sm:p-5 mb-5 rounded-2xl bg-white border border-border-luxury shadow-2xs">
+                  <div className="w-9 h-9 rounded-xl bg-gold-main/10 border border-gold-main/20 flex items-center justify-center text-gold-dark flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <span className="font-serif text-sm sm:text-base font-bold text-foreground block">
+                      {villa.location}
+                    </span>
+                    <p className="font-sans text-xs sm:text-sm text-gray-600 font-light mt-1 leading-relaxed">
+                      {villa.fullAddress || `${villa.subLocation}, ${villa.region}, India`}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Interactive Embedded Google Map */}
+                <div className="relative w-full h-80 sm:h-96 rounded-3xl overflow-hidden border border-border-luxury shadow-md mb-6 bg-brand-cream">
+                  <iframe
+                    title={`Interactive Google Map - ${villa.title}`}
+                    src={
+                      villa.mapEmbedUrl ||
+                      `https://maps.google.com/maps?q=${encodeURIComponent(
+                        villa.subLocation + ', ' + villa.region
+                      )}&t=&z=14&ie=UTF8&iwloc=&output=embed`
+                    }
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full filter saturate-105"
+                  />
+
+                  {/* Floating Driving Directions CTA Badge on Map */}
+                  <div className="absolute bottom-4 left-4 right-4 sm:right-auto z-10">
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+                        villa.googleMapSearchQuery || `${villa.title} ${villa.location}`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-dark/95 text-gold-light border border-gold-main/40 text-xs font-semibold shadow-2xl backdrop-blur-md hover:bg-gold-main hover:text-black hover:border-gold-light transition-all duration-300"
+                    >
+                      <svg className="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.284a1.75 1.75 0 00-1.006 0L3.622 5.72A1.125 1.125 0 003 6.726v11.948c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497a1.75 1.75 0 001.006 0z" />
+                      </svg>
+                      <span>Get Driving Directions in Google Maps</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Neighborhood Accessibility & Transit Distances */}
+                {villa.neighborhoodHighlights && villa.neighborhoodHighlights.length > 0 && (
+                  <div>
+                    <h3 className="font-serif text-base font-bold text-foreground mb-3">
+                      Proximity &amp; Transit Times
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {villa.neighborhoodHighlights.map((point, pIdx) => (
+                        <div
+                          key={pIdx}
+                          className="p-3.5 rounded-2xl bg-white border border-border-luxury flex items-start gap-3 hover:border-gold-main/40 transition-all duration-200"
+                        >
+                          <div className="w-8 h-8 rounded-lg bg-gold-main/10 border border-gold-main/20 flex items-center justify-center text-gold-dark font-mono text-xs font-bold flex-shrink-0 mt-0.5">
+                            {pIdx + 1}
+                          </div>
+                          <div>
+                            <div className="flex items-baseline gap-2">
+                              <span className="font-serif text-sm font-bold text-foreground">
+                                {point.label}
+                              </span>
+                              <span className="text-[11px] font-semibold text-gold-dark font-sans">
+                                • {point.distance}
+                              </span>
+                            </div>
+                            <p className="font-sans text-xs text-gray-600 font-light mt-0.5 leading-relaxed">
+                              {point.desc}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Master Rules */}

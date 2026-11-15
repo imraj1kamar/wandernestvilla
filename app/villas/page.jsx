@@ -22,10 +22,49 @@ export const metadata = {
 };
 
 const trustPillars = [
-  { icon: '🏊‍♂️', title: '100% Private Pools', desc: 'No shared water amenities' },
-  { icon: '👨‍🍳', title: 'Personal In-House Chef', desc: 'Custom farm-to-table menus' },
-  { icon: '🛎️', title: 'Dedicated Butler Team', desc: '24/7 on-site hospitality' },
-  { icon: '🔒', title: 'Uncompromised Seclusion', desc: 'Gated private compounds' },
+  {
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M2 12c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0" />
+        <path d="M2 17c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0" />
+        <path d="M2 7c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0" />
+      </svg>
+    ),
+    title: '100% Private Pools',
+    desc: 'No shared water amenities',
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z" />
+        <line x1="6" y1="17" x2="18" y2="17" />
+      </svg>
+    ),
+    title: 'Personal In-House Chef',
+    desc: 'Custom farm-to-table menus',
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 4V2" />
+        <path d="M10 4h4" />
+        <path d="M4 15c0-4.418 3.582-8 8-8s8 3.582 8 8H4z" />
+        <path d="M2 19h20" />
+      </svg>
+    ),
+    title: 'Dedicated Butler Team',
+    desc: '24/7 on-site hospitality',
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </svg>
+    ),
+    title: 'Uncompromised Seclusion',
+    desc: 'Gated private compounds',
+  },
 ];
 
 export default function OurVillasPage() {
@@ -58,8 +97,13 @@ export default function OurVillasPage() {
           <h2 className="sr-only">Our Core Highlights and Villa Portfolio</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-8 border-t border-black/5 text-left">
             {trustPillars.map((p) => (
-              <div key={p.title} className="p-3.5 rounded-2xl bg-white border border-border-luxury shadow-2xs">
-                <div className="text-xl mb-1">{p.icon}</div>
+              <div
+                key={p.title}
+                className="group p-4 rounded-2xl bg-white border border-border-luxury shadow-2xs hover:border-gold-main/40 hover:shadow-md transition-all duration-300"
+              >
+                <div className="w-10 h-10 rounded-xl bg-gold-main/10 border border-gold-main/20 flex items-center justify-center text-gold-dark mb-3 group-hover:bg-gold-main group-hover:text-black group-hover:border-gold-main transition-all duration-300">
+                  {p.icon}
+                </div>
                 <h3 className="font-serif text-sm font-bold text-foreground">{p.title}</h3>
                 <p className="font-sans text-xs text-muted font-light mt-0.5">{p.desc}</p>
               </div>
