@@ -40,18 +40,7 @@ export const apiCollection = {
   deleteVillaStaff: (villaId, staffId) => apiService.delete(`/api/villas/${villaId}/staff/${staffId}`),
   updateUserPermissions: (userId, permissions) => apiService.put(`/api/users/${userId}/permissions`, { permissions }),
 
-  // ==========================================
-  // SOFTWARE DISTRIBUTION & SECURE LINKS
-  // ==========================================
-  getSoftwares: () => apiService.get("/api/software"),
-  createSoftware: (data) => apiService.post("/api/software", data),
-  addSoftware: (data) => apiService.post("/api/software", data),
-  updateSoftware: (id, data) => apiService.put(`/api/software/${id}`, data),
-  deleteSoftware: (id) => apiService.delete(`/api/software/${id}`),
   
-  getSoftwareLinks: () => apiService.get("/api/software/links"),
-  assignSoftware: (data) => apiService.post("/api/software/links", data), // Generate token link
-
   // ==========================================
   // DYNAMIC SIDEBAR MENU BUILDER
   // ==========================================

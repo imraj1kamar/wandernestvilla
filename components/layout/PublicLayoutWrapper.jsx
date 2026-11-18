@@ -1,18 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import { usePathname } from 'next/navigation';
 import Header from "@/components/layout/public/Header";
 import Footer from "@/components/layout/public/Footer";
 import FloatingActions from "@/components/ui/FloatingActions";
 
 /**
- * PublicLayoutWrapper
- * Conditionally renders public Header, Footer, and FloatingActions
- * ONLY when on consumer public website pages.
- * Excludes admin, dashboard, and login routes.
+ * PublicLayoutContent
+ * Internal component that consumes `usePathname()`.
+ * Must be wrapped in `<Suspense>` to satisfy Next.js 16+ Turbopack / Partial Prerendering rules.
  */
-export default function PublicLayoutWrapper({ children }) {
+function PublicLayoutContent({ children }) {
   const pathname = usePathname();
 
   // Hide public navigation, footer, and floating buttons on admin, dashboard, and auth pages
@@ -35,5 +34,19 @@ export default function PublicLayoutWrapper({ children }) {
       <Footer />
       <FloatingActions />
     </>
+  );
+}
+
+/**
+ * PublicLayoutWrapper
+ * Root layout wrapper that provides a `<Suspense>` boundary around client-side navigation hooks.
+ */
+export default function PublicLayoutWrapper({ children }) {
+  return (
+    <Suspense fallback={<main className="flex-grow">{children}</main>}>
+      <PublicLayoutContent>
+        {children}
+      </PublicLayoutContent>
+    </Suspense>
   );
 }
