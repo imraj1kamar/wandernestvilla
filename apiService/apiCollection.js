@@ -42,9 +42,11 @@ export const apiCollection = {
   deleteMenu: (id) => apiService.delete(`/api/menus/${id}`),
 
   // ==========================================
-  // DASHBOARD STATS & METRICS
+  // DASHBOARD STATS & METRICS (Role & Villa Scoped)
   // ==========================================
-  getDashboardStats: () => apiService.get("/api/dashboard/stats"),
+  getDashboardStats: (params = {}) => apiService.get("/api/dashboard/stats", { params }),
+  getVillaLedger: (params = {}) => apiService.get("/api/dashboard/ledger", { params }),
+  logExpense: (data) => apiService.post("/api/dashboard/expenses", data),
 
   // ==========================================
   // ACTIVITY & AUDIT LOGS
