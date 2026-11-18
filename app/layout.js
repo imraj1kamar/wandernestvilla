@@ -5,6 +5,7 @@ import "./globals.css";
 import { Providers } from "@/redux/Providers";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 import PublicLayoutWrapper from "@/components/layout/PublicLayoutWrapper";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
             {children}
           </PublicLayoutWrapper>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
