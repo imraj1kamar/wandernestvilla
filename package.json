@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^2.14.0",
     "@tanstack/react-query": "^5.107.1",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "axios": "^1.21.1",
     "next": "16.4.6",
     "react": "19.3.0",
