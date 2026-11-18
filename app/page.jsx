@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '@/components/sections/home/Hero';
+import ExploreHolidayHomes from '@/components/sections/home/ExploreHolidayHomes';
 import BrandStory from '@/components/sections/home/BrandStory';
 import FeaturedDestinations from '@/components/sections/home/FeaturedDestinations';
 import BrowseByVibe from '@/components/sections/home/BrowseByVibe';
@@ -48,10 +49,14 @@ export default function HomePage() {
       
       {/* 1. Hero Section (with Embedded Glassmorphic Search) */}
       <Hero />
- {/* Floating Search Bar stays static on top */}
-      <div className="relative z-40">
+      {/* Floating Search Bar (Smoothly overlaps Hero, natural in-flow document layout) */}
+      <div className="relative z-30 -mt-10 sm:-mt-14 md:-mt-12 mb-2 md:mb-4">
         <SearchSection />
       </div>
+
+      {/* Explore by Region / Holiday Homes Marquee Tag Cloud */}
+      <ExploreHolidayHomes />
+
       {/* 2. The Wandernest Story (Brand Philosophy & SEO Keyword Block) */}
       <RevealOnScroll yOffset={30} duration={1200}>
         <BrandStory />

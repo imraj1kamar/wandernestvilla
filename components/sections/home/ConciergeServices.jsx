@@ -47,7 +47,7 @@ export default function ConciergeServices() {
   const activeService = services.find((s) => s.id === activeTab) || services[0];
 
   return (
-    <section className="w-full bg-brand-light py-16 md:py-24 border-t border-black/5">
+    <section className="w-full bg-brand-light py-12 md:py-16 lg:py-20 border-t border-black/5">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         
         {/* Section Header */}

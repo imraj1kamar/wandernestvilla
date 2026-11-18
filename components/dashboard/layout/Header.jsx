@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useDispatch, useSelector } from 'react-redux';
-import { logout, selectCurrentUser } from '@/redux/slices/authSlice';
+import { logout, selectCurrentUser, selectActiveVillaId, setActiveVillaId } from '@/redux/slices/authSlice';
 
 /**
  * AdminHeader Component
@@ -15,6 +15,7 @@ export default function AdminHeader({ onToggleSidebar }) {
   const router = useRouter();
   const dispatch = useDispatch();
   const user = useSelector(selectCurrentUser);
+  const activeVillaId = useSelector(selectActiveVillaId) || 'all';
   const [profileOpen, setProfileOpen] = useState(false);
 
   const handleLogout = () => {
@@ -42,13 +43,48 @@ export default function AdminHeader({ onToggleSidebar }) {
           </button>
         )}
 
-        <div>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
           <h2 className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-1.5">
             <span>Welcome,</span>
             <span className="text-gold-main font-serif">
               {user?.adminRole || user?.name || 'Super Admin'}
             </span>
           </h2>
+
+          {/* ─── GLOBAL VILLA CONTEXT SWITCHER ─── */}
+          {user?.role === 'villa_owner' || user?.role === 'villa_admin' ? (
+            <span className="inline-flex items-center gap-1.5 bg-gold-main/10 border border-gold-main/30 text-gold-light text-[11px] font-semibold px-2.5 py-1 rounded-lg w-max">
+              <span>🏡</span>
+              <span>{user?.assignedVilla || 'Assigned Villa Estate'}</span>
+              <span className="text-[9px] bg-gold-main/20 text-gold-light px-1.5 py-0.2 rounded uppercase tracking-wider">Locked</span>
+            </span>
+          ) : user?.role === 'concierge_manager' || user?.role === 'villa_staff' ? (
+            <span className="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/30 text-blue-300 text-[11px] font-semibold px-2.5 py-1 rounded-lg w-max">
+              <span>🛎️</span>
+              <span>{user?.assignedVilla || 'Villa Rosewood'}</span>
+              <span className="text-[9px] bg-blue-500/20 px-1.5 py-0.2 rounded uppercase">Staff Scope</span>
+            </span>
+          ) : (
+            <div className="flex items-center gap-1.5">
+              <label htmlFor="villa-switcher" className="text-[11px] uppercase tracking-wider text-gray-400 font-sans hidden xl:inline">
+                Scope:
+              </label>
+              <select
+                id="villa-switcher"
+                value={activeVillaId}
+                onChange={(e) => dispatch(setActiveVillaId(e.target.value))}
+                className="bg-[#161a29] border border-gold-main/30 text-gold-light text-xs font-medium rounded-xl px-2.5 py-1.5 focus:outline-none focus:border-gold-main cursor-pointer hover:border-gold-main/60 transition-colors"
+                title="Super Admin God-Eye Villa Filter"
+              >
+                <option value="all">🌐 All Villas (Master Consolidated)</option>
+                <option value="villa-1">🏡 Villa Rosewood, Goa</option>
+                <option value="villa-2">🏡 The Cloud Retreat, Lonavla</option>
+                <option value="villa-3">🏡 Oceanic Whisper, Alibaug</option>
+                <option value="villa-4">🏡 Heritage Estate, Karjat</option>
+                <option value="villa-5">🏡 Amber Palace, Udaipur</option>
+              </select>
+            </div>
+          )}
         </div>
       </div>
 

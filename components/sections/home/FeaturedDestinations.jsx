@@ -12,27 +12,12 @@ const destinations = [
   { name: 'Pawna', tagline: 'Lakeside Bliss', count: '17 Villas', image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=600&q=80', href: '/destinations/pawna' },
 ];
 
-const popularHolidayHomeTags = [
-  { title: 'Luxury Villas in Lonavla', count: '52 Stays', href: '/destinations/lonavla' },
-  { title: 'Beachfront Homes in Alibaug', count: '38 Stays', href: '/destinations/alibaug' },
-  { title: 'Private Pool Villas in Goa', count: '64 Stays', href: '/destinations/goa' },
-  { title: 'Heritage Palaces in Udaipur', count: '16 Stays', href: '/destinations/udaipur' },
-  { title: 'Lakeside Villas in Karjat', count: '28 Stays', href: '/destinations/karjat' },
-  { title: 'Hilltop Estates in Kasauli', count: '18 Stays', href: '/destinations/kasauli' },
-  { title: 'Weekend Stays in Khandala', count: '24 Stays', href: '/destinations/khandala' },
-  { title: 'Private Chef Villas in Pawna', count: '17 Stays', href: '/destinations/pawna' },
-  { title: 'Vineyard Estates in Igatpuri', count: '15 Stays', href: '/destinations/igatpuri' },
-  { title: 'Orchard Mansions in Mahabaleshwar', count: '19 Stays', href: '/destinations/mahabaleshwar' },
-  { title: 'Celebration Compounds in Mumbai', count: '32 Stays', href: '/destinations/mumbai' },
-  { title: 'Backwater Sanctuaries in Kerala', count: '9 Stays', href: '/destinations/kerala' },
-];
-
 export default function FeaturedDestinations() {
   // Duplicated array for seamless non-stop loop
   const duplicatedDestinations = [...destinations, ...destinations];
 
   return (
-    <section className="w-full bg-brand-light py-16 md:py-24 border-t border-black/5 overflow-hidden">
+    <section className="w-full bg-brand-light py-12 md:py-16 lg:py-20 border-t border-black/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -98,58 +83,6 @@ export default function FeaturedDestinations() {
                 <div className="absolute bottom-0 inset-x-0 h-0.5 bg-gradient-to-r from-transparent via-gold-main to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity" />
               </Link>
             ))}
-          </div>
-        </div>
-
-      <div className="pt-12 mt-12 border-t border-black/5">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
-            <div>
-              <span className="text-xs uppercase tracking-widest text-gold-dark font-bold block mb-1">
-                Explore by Region &bull; Holiday Homes &amp; Private Villas
-              </span>
-              <p className="text-xs text-gray-600 font-light">
-                Direct links to handpicked luxury villas with private pools and gourmet culinary service.
-              </p>
-            </div>
-            <span className="text-xs text-gray-500 font-medium hidden md:inline-block">
-              200+ Verified Private Properties
-            </span>
-          </div>
-
-          {/* ─── ANIMATED TAG CLOUD (Marquee Match) ─── */}
-          <div className="relative w-full overflow-hidden pb-4 group/tags">
-            
-            {/* Adding animation-duration:45s to make it slide slightly slower and smoother than the images */}
-            <div className="flex gap-2.5 sm:gap-3 w-max animate-marquee [animation-duration:45s] group-hover/tags:[animation-play-state:paused]">
-              
-              {/* Array duplicated inline for the seamless infinite loop effect */}
-              {[...popularHolidayHomeTags, ...popularHolidayHomeTags].map((tag, index) => (
-                <Link
-                  key={`${tag.title}-${index}`}
-                  href={tag.href}
-                  // Added flex-shrink-0 so the pills don't squeeze, and keep their perfect shape
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-border-luxury hover:border-gold-main hover:bg-brand-cream text-xs sm:text-sm text-foreground hover:text-gold-dark transition-all duration-200 shadow-2xs group flex-shrink-0"
-                >
-                  <svg
-                    className="w-3.5 h-3.5 text-gold-main group-hover:scale-110 transition-transform flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                  </svg>
-                  
-                  {/* Added whitespace-nowrap to prevent text from breaking into two lines */}
-                  <span className="font-medium whitespace-nowrap">{tag.title}</span>
-                  
-                  <span className="text-[11px] px-2 py-0.5 rounded-full bg-gray-100 group-hover:bg-gold-main/15 text-gray-600 group-hover:text-gold-dark font-semibold transition-colors">
-                    {tag.count}
-                  </span>
-                </Link>
-              ))}
-            </div>
           </div>
         </div>
 

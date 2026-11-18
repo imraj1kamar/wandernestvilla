@@ -89,7 +89,7 @@ export default function SearchSection() {
   };
 
   return (
-    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20 w-[95%] max-w-5xl px-2">
+    <div className="w-[95%] max-w-5xl mx-auto px-2 relative z-30">
       <div className="bg-brand-dark rounded-2xl p-3 md:p-4 flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-0 shadow-2xl border border-gold-main/50 relative">
 
         {/* ─── SECTION 1: DESTINATIONS ─────────────────────────────────────── */}

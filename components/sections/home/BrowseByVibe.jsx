@@ -88,7 +88,7 @@ export default function BrowseByVibe() {
   };
 
   return (
-    <section className="w-full bg-brand-light py-16 md:py-24 overflow-hidden border-t border-black/5">
+    <section className="w-full bg-brand-light py-12 md:py-16 lg:py-20 overflow-hidden border-t border-black/5">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         
         {/* Header Block with Title & Carousel Slider Controls */}

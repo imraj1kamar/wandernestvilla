@@ -21,6 +21,26 @@ export const apiCollection = {
   deleteUser: (id) => apiService.delete(`/api/users/${id}`),
 
   // ==========================================
+  // HIERARCHICAL RBAC, TEAMS & VILLAS
+  // ==========================================
+  getVillas: (params = {}) => apiService.get("/api/villas", { params }),
+  getVillaById: (id) => apiService.get(`/api/villas/${id}`),
+  createVilla: (data) => apiService.post("/api/villas", data),
+  updateVilla: (id, data) => apiService.put(`/api/villas/${id}`, data),
+  deleteVilla: (id) => apiService.delete(`/api/villas/${id}`),
+
+  getTeamMembers: (params = {}) => apiService.get("/api/team", { params }),
+  createTeamMember: (data) => apiService.post("/api/team", data),
+  updateTeamMember: (id, data) => apiService.put(`/api/team/${id}`, data),
+  deleteTeamMember: (id) => apiService.delete(`/api/team/${id}`),
+
+  getVillaStaff: (villaId, params = {}) => apiService.get(`/api/villas/${villaId}/staff`, { params }),
+  createVillaStaff: (villaId, data) => apiService.post(`/api/villas/${villaId}/staff`, data),
+  updateVillaStaff: (villaId, staffId, data) => apiService.put(`/api/villas/${villaId}/staff/${staffId}`, data),
+  deleteVillaStaff: (villaId, staffId) => apiService.delete(`/api/villas/${villaId}/staff/${staffId}`),
+  updateUserPermissions: (userId, permissions) => apiService.put(`/api/users/${userId}/permissions`, { permissions }),
+
+  // ==========================================
   // SOFTWARE DISTRIBUTION & SECURE LINKS
   // ==========================================
   getSoftwares: () => apiService.get("/api/software"),

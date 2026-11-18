@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function InnerCircleCTA() {
   return (
-    <section className="relative w-full bg-brand-dark text-white py-24 md:py-32 overflow-hidden border-t border-white/10">
+    <section className="relative w-full bg-brand-dark text-white py-14 md:py-18 lg:py-20 overflow-hidden border-t border-white/10">
       
       {/* Decorative luxury radial gradient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gold-main/10 rounded-full blur-[120px] pointer-events-none" />

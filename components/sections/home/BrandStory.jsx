@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function BrandStory() {
   return (
-    <section className="w-full bg-brand-light pt-28 md:pt-36 pb-16 md:pb-24">
+    <section className="w-full bg-brand-light py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
